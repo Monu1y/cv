@@ -1,0 +1,235 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Css variables */
+:root {
+    --navbar-height: 60px:
+}
+
+/* Navigation bar */
+#navbar {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation bar logo and image */
+#logo {
+    margin: 18px 97px;
+    height: 33px;
+    width: 16px;
+}
+
+#logo img {
+    height: 90px;
+    margin: -16px -89px;
+    border-radius: 20px;
+}
+
+
+/* Navigation bar List styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: whitesmoke;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar ul li {
+    color: aliceblue;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 5px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    height: 690px;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url('../image/food2.jpg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: #e5133dd9;
+    text-align: center;
+    font-family: serif;
+}
+
+#home h1 p {
+    color: #e5133dd9;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: serif;
+
+}
+
+/* services section  */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 6px;
+    border: 25px;
+    background-color: rgb(247, 239, 239);
+}
+
+#services .box img {
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Client Section  */
+#client-section {
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../image/background\ image.jpg');
+    width: 100%;
+    height: 54%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients img {
+    height: 124px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 24px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../image/food\ order.jpg');
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    color:inherit;
+    animation-direction: alternate;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+    background: black;
+    color: white;
+}
+
+/* Utility classes */
+.h-primary {
+    color: yellowgreen;
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-color: brown;
+    color: whitesmoke;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
